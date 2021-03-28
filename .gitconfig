@@ -1,0 +1,5 @@
+[user]
+	email = jos.dehart@startmail.com
+	name = Jos de Hart
+[credential]
+	helper = store
