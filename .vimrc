@@ -55,7 +55,7 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want
 " this.
 
 " Disable audible bell because it's annoying.
-" set noerrorbells visualbell t_vb=
+set noerrorbells visualbell t_vb=
 
 " Enable mouse support. You should avoid relying on this too much, but it
 " can
@@ -94,7 +94,6 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'challenger-deep-theme/vim', {'name': 'challenger-deep-theme'}
-colorscheme challenger_deep
 "
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
@@ -113,10 +112,11 @@ colorscheme challenger_deep
 " " different version somewhere else.
 " " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
-" " All of your Plugins must be added before the following line
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+" " All of your Plugins must be added before the following line
 call vundle#end()            " required
+colorscheme challenger_deep
 filetype plugin indent on    " required
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on

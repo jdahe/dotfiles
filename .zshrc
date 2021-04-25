@@ -24,6 +24,7 @@ plugins=(
   git 
   npm 
   node
+  pip
   sudo
   tmux
   ubuntu
@@ -38,12 +39,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-source /home/josdehart/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
 export PATH=~/.local/bin:$PATH
 export WINHOME="/mnt/c/Users/Jos de Hart"
