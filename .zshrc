@@ -20,6 +20,7 @@ plugins=(
   zsh-autosuggestions
   cabal
   cargo
+  common-aliases
   dotenv
   git 
   npm 
@@ -28,7 +29,7 @@ plugins=(
   sudo
   tmux
   ubuntu
-  vi-mode
+  # vi-mode
   vscode
   web-search
   yarn
